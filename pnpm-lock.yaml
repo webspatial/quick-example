@@ -43,8 +43,8 @@ importers:
         specifier: ^4.3.4
         version: 4.3.4(vite@6.2.3(terser@5.39.0))
       '@webspatial/builder':
-        specifier: 0.0.14
-        version: 0.0.14
+        specifier: 0.0.16
+        version: 0.0.16
       '@webspatial/platform-visionos':
         specifier: 0.0.2
         version: 0.0.2
@@ -984,8 +984,8 @@ packages:
   '@webgpu/types@0.1.58':
     resolution: {integrity: sha512-+8+NBE17zrc1wS4FvZmmuGTpog5C2H6QC46RY2TTWNpnt15Xvp7dZoUHZQXvb8l5ddKwO8l1pDJa6XTnR4Al1Q==}
 
-  '@webspatial/builder@0.0.14':
-    resolution: {integrity: sha512-e4Q9pXMT+k5zcM7u90LqwqT0jUsBj22azO3tNBetDvqvP0zAem1u5Yai8s8Pu6sxt3Sf6Nz9mjzQU6fxmgoXyA==}
+  '@webspatial/builder@0.0.16':
+    resolution: {integrity: sha512-7PPryWUwj70OaHAhY7pC8GDQLOEI+iW6vvtbLUL7okROIvF79uitR2M/fbgYVgTI89HDpozNQFto2EsryVIEkg==}
     engines: {node: '>=14.15.0'}
     hasBin: true
 
@@ -3086,7 +3086,7 @@ snapshots:
 
   '@webgpu/types@0.1.58': {}
 
-  '@webspatial/builder@0.0.14':
+  '@webspatial/builder@0.0.16':
     dependencies:
       '@resvg/resvg-js': 2.6.2
       cli-progress: 3.12.0

@@ -29,7 +29,7 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
-    "@webspatial/builder": "0.0.14",
+    "@webspatial/builder": "0.0.16",
     "@webspatial/platform-visionos": "0.0.2",
     "@webspatial/react-plugin-vite": "0.0.2",
     "eslint": "^9.21.0",
