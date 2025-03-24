@@ -4,8 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "install:clean": "rm -rf node_modules && pnpm install",
+    "install:update": "rm -rf node_modules pnpm-lock.yaml && pnpm install",
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev:avp": "XR_ENV=avp vite",
+    "build": "vite build && XR_ENV=avp vite build",
+    "run:avp": "webspatial-builder run --base=$XR_DEV_SERVER/webspatial/avp/",
+    "build:avp": "webspatial-builder build --base=$XR_PRE_SERVER --teamId=$XR_TEAM_ID",
+    "publish:avp": "webspatial-builder publish  --base=$XR_PROD_SERVER --teamId=$XR_TEAM_ID --version=$XR_VERSION --u=$XR_DEV_NAME --p=$XR_DEV_PASSWORD",
     "lint": "eslint .",
     "preview": "vite preview"
   },

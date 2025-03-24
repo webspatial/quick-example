@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# pnpm specific
+.pnpm-store/
+.pnpm-state.json
+.pnpmfile.cjs
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

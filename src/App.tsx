@@ -10,7 +10,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <Router>
+    <Router basename={process.env.XR_ENV === "avp" ? "/webspatial/avp/" : ""}>
       <Routes>
         <Route path="/second-page" element={<SecondPage />} />
         <Route

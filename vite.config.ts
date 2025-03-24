@@ -7,7 +7,9 @@ import { createHtmlPlugin } from "vite-plugin-html";
 export default defineConfig({
   plugins: [
     react(),
-    WebSpatial(),
+    WebSpatial({
+      port: 5001,
+    }),
     createHtmlPlugin({
       inject: {
         data: {
@@ -16,4 +18,7 @@ export default defineConfig({
       },
     }),
   ],
+  define: {
+    "process.env": process.env,
+  },
 });
