@@ -16,7 +16,4 @@ export default defineConfig({
       },
     }),
   ],
-  server: {
-    port: process.env.XR_ENV ? 5001 : undefined,
-  },
 });
