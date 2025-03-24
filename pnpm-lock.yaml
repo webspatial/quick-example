@@ -15,8 +15,8 @@ importers:
         specifier: 0.0.3
         version: 0.0.3
       '@webspatial/react-sdk':
-        specifier: 0.0.14
-        version: 0.0.14(@webspatial/core-sdk@0.0.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: 0.0.15
+        version: 0.0.15(@webspatial/core-sdk@0.0.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -43,14 +43,14 @@ importers:
         specifier: ^4.3.4
         version: 4.3.4(vite@6.2.3(terser@5.39.0))
       '@webspatial/builder':
-        specifier: 0.0.16
-        version: 0.0.16
+        specifier: 0.0.17
+        version: 0.0.17
       '@webspatial/platform-visionos':
         specifier: 0.0.2
         version: 0.0.2
       '@webspatial/react-plugin-vite':
-        specifier: 0.0.2
-        version: 0.0.2(vite@6.2.3(terser@5.39.0))
+        specifier: 0.0.3-alpha.0
+        version: 0.0.3-alpha.0(vite@6.2.3(terser@5.39.0))
       eslint:
         specifier: ^9.21.0
         version: 9.23.0
@@ -984,8 +984,8 @@ packages:
   '@webgpu/types@0.1.58':
     resolution: {integrity: sha512-+8+NBE17zrc1wS4FvZmmuGTpog5C2H6QC46RY2TTWNpnt15Xvp7dZoUHZQXvb8l5ddKwO8l1pDJa6XTnR4Al1Q==}
 
-  '@webspatial/builder@0.0.16':
-    resolution: {integrity: sha512-7PPryWUwj70OaHAhY7pC8GDQLOEI+iW6vvtbLUL7okROIvF79uitR2M/fbgYVgTI89HDpozNQFto2EsryVIEkg==}
+  '@webspatial/builder@0.0.17':
+    resolution: {integrity: sha512-swzUhNbvlbVZKr9WgOqW/M7E4ArBCNghlhkz1GeFq5SPJde1KbUlZGekRtrfEdZINf9jE13hG5+jPxXHlLO6sg==}
     engines: {node: '>=14.15.0'}
     hasBin: true
 
@@ -996,13 +996,13 @@ packages:
     resolution: {integrity: sha512-Dg5Jj1ivEt9sHvAv09TaTNTKE1j9ONtHWT8kk4VECUIDS6w9KCa7FMVIf5gY6ELjr3kOLzosumrPekl47/PSlw==}
     engines: {node: '>=14.15.0'}
 
-  '@webspatial/react-plugin-vite@0.0.2':
-    resolution: {integrity: sha512-6QBaOS/RsJ5oFJFCHhAePhNP9WkZRz/wJdD6AQunBgXPpT+qc6Pk6vtsoj1UovLNdFWtuQQjGSvdlwZIizB6SQ==}
+  '@webspatial/react-plugin-vite@0.0.3-alpha.0':
+    resolution: {integrity: sha512-bSJ3pZimaLaZwx2g7+fCqPCEVM6ktipTRXan4Lzg8/jXB2itHvL3AzLrGOaRqnoICkEkP/gp2oT0OEsFFmWpKQ==}
     peerDependencies:
       vite: ^6.0.0
 
-  '@webspatial/react-sdk@0.0.14':
-    resolution: {integrity: sha512-u7w3XsmFwPMqgjEWpflzNB5iCWyT8DDXVPGPOSx4pRJmtzglIyRlTv1iox6B2uB5RYvfQYOlrql6ODtZ4/UFbQ==}
+  '@webspatial/react-sdk@0.0.15':
+    resolution: {integrity: sha512-7jxTRRjO5z1k02i2+iF0xT974bKTM6fePpRQyqoVHw1BS3Aqwm1MYzNJRD7L7f3x3wO1Vyx/JJHNgf8BYhGPIw==}
     peerDependencies:
       '@webspatial/core-sdk': 0.0.3
       react: '>=18.0.0'
@@ -3086,7 +3086,7 @@ snapshots:
 
   '@webgpu/types@0.1.58': {}
 
-  '@webspatial/builder@0.0.16':
+  '@webspatial/builder@0.0.17':
     dependencies:
       '@resvg/resvg-js': 2.6.2
       cli-progress: 3.12.0
@@ -3110,11 +3110,11 @@ snapshots:
 
   '@webspatial/platform-visionos@0.0.2': {}
 
-  '@webspatial/react-plugin-vite@0.0.2(vite@6.2.3(terser@5.39.0))':
+  '@webspatial/react-plugin-vite@0.0.3-alpha.0(vite@6.2.3(terser@5.39.0))':
     dependencies:
       vite: 6.2.3(terser@5.39.0)
 
-  '@webspatial/react-sdk@0.0.14(@webspatial/core-sdk@0.0.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@webspatial/react-sdk@0.0.15(@webspatial/core-sdk@0.0.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@google/model-viewer': 4.0.0(three@0.170.0)
       '@types/three': 0.170.0

@@ -2,15 +2,18 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import SecondPage from "./SecondPage";
 import { initScene } from "@webspatial/react-sdk";
+
+const basename =
+  (process.env.XR_ENV && `/webspatial/${process.env.XR_ENV}`) || "";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <Router basename={process.env.XR_ENV === "avp" ? "/webspatial/avp/" : ""}>
+    <Router basename={basename}>
       <Routes>
         <Route path="/second-page" element={<SecondPage />} />
         <Route
@@ -44,9 +47,9 @@ function App() {
               <div className="card link-card" enable-xr>
                 <h2>Open Second Page</h2>
                 <p>
-                  <a href="/second-page" target="_blank" enable-xr>
+                  <Link to="/second-page" target="_blank" enable-xr>
                     Open Second Page with a Link
-                  </a>
+                  </Link>
                 </p>
                 <p>
                   <button
@@ -60,7 +63,7 @@ function App() {
                           },
                         };
                       });
-                      window.open("/second-page", "secondScene");
+                      window.open(`${basename}/second-page`, "secondScene");
                     }}>
                     Open Second Page with a Button
                   </button>

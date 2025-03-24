@@ -1,7 +1,6 @@
 {
   "name": "My Awesome App",
   "start_url": "/",
-  "scope": "/",
   "display": "minimal-ui",
   "icons": [
     {
