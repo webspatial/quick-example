@@ -23,5 +23,5 @@ pnpm dev:avp
 Step 3:
 
 ```bash
-XR_DEV_SERVER="http://localhost:[PORT from `pnpm dev:avp`]" pnpm run:avp
+XR_DEV_SERVER="[URL from `pnpm dev:avp`]" pnpm run:avp
 ```

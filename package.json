@@ -9,9 +9,9 @@
     "dev": "vite",
     "dev:avp": "XR_ENV=avp vite",
     "build": "vite build && XR_ENV=avp vite build",
-    "run:avp": "webspatial-builder run --base=$XR_DEV_SERVER/webspatial/avp/",
-    "build:avp": "webspatial-builder build --base=$XR_PRE_SERVER --teamId=$XR_TEAM_ID",
-    "publish:avp": "webspatial-builder publish  --base=$XR_PROD_SERVER --teamId=$XR_TEAM_ID --version=$XR_VERSION --u=$XR_DEV_NAME --p=$XR_DEV_PASSWORD",
+    "run:avp": "webspatial-builder run --base=$XR_DEV_SERVER",
+    "build:avp": "webspatial-builder build --base=$XR_PRE_SERVER --bundle-id=$XR_BUNDLE_ID --teamId=$XR_TEAM_ID",
+    "publish:avp": "webspatial-builder publish  --base=$XR_PROD_SERVER --bundle-id=$XR_BUNDLE_ID --teamId=$XR_TEAM_ID --version=$XR_VERSION --u=$XR_DEV_NAME --p=$XR_DEV_PASSWORD",
     "lint": "eslint .",
     "preview": "vite preview"
   },

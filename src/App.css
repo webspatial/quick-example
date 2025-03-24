@@ -77,12 +77,10 @@ html.is-spatial {
 
     p {
       padding: 0;
-      margin: 0px 20px;
+      margin: 20px 20px;
     }
     a {
       display: block;
-      padding: 5px 10px;
-      height: 40px;
       --xr-background-material: thick;
       border-radius: 10px;
     }
