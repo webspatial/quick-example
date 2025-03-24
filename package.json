@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:avp": "XR_ENV=avp vite",
+    "dev:all": "concurrently \"vite\"  \"XR_ENV=avp vite \" ",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -26,6 +28,7 @@
     "@webspatial/builder": "0.0.14",
     "@webspatial/platform-visionos": "0.0.2",
     "@webspatial/react-plugin-vite": "0.0.2",
+    "concurrently": "^9.1.2",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
