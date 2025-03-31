@@ -1,0 +1,46 @@
+{
+  "name": "quick-3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "install:clean": "rm -rf node_modules && pnpm install",
+    "install:update": "rm -rf node_modules pnpm-lock.yaml package-lock.json && pnpm install",
+    "dev": "vite",
+    "dev:avp": "XR_ENV=avp vite",
+    "build": "vite build && XR_ENV=avp vite build",
+    "run:avp": "dotenv -e .env.local -- sh -c 'webspatial-builder run --base=$XR_DEV_SERVER'",
+    "build:avp": "dotenv -e .env.local -- sh -c 'webspatial-builder build --base=$XR_PRE_SERVER --bundle-id=$XR_BUNDLE_ID --teamId=$XR_TEAM_ID'",
+    "publish:avp": "dotenv -e .env.local -- sh -c 'webspatial-builder publish  --base=$XR_PROD_SERVER --bundle-id=$XR_BUNDLE_ID --teamId=$XR_TEAM_ID --version=$XR_VERSION --u=$XR_DEV_NAME --p=$XR_DEV_PASSWORD'",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/model-viewer": "^4.0.0",
+    "@webspatial/core-sdk": "^0.1.4",
+    "@webspatial/react-sdk": "^0.1.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.0",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@webspatial/builder": "^0.1.4",
+    "@webspatial/platform-visionos": "^0.1.4",
+    "@webspatial/vite-plugin": "^0.1.2",
+    "dotenv-cli": "^8.0.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0",
+    "vite-plugin-html": "^3.2.2"
+  },
+  "packageManager": "pnpm@10.6.4+sha512.da3d715bfd22a9a105e6e8088cfc7826699332ded60c423b14ec613a185f1602206702ff0fe4c438cb15c979081ce4cb02568e364b15174503a63c7a8e2a5f6c"
+}
