@@ -52,10 +52,10 @@ html.is-spatial {
 
   .count-card {
     --xr-background-material: thick;
-    /* position: relative;
-    --xr-back: 20; */
-    transform-origin: top left;
-    transform: translateZ(50px);
+    position: relative;
+    --xr-back: 50;
+    /* transform-origin: top left;
+    transform: translateZ(50px); */
 
     p {
       --xr-background-material: transparent;
@@ -74,8 +74,8 @@ html.is-spatial {
     position: relative;
     --xr-back: 50;
     top: 20px;
-    /* transform-origin: top left;
-    transform: translateZ(30px) rotateX(30deg); */
+    transform-origin: top left;
+    transform: translateZ(30px) rotateX(0deg);
 
     a {
       display: block;
