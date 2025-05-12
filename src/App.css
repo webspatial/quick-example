@@ -43,11 +43,19 @@
 
 html.is-spatial {
   background-color: transparent;
-  --xr-background-material: transparent;
+  /* --xr-background-material: transparent; */
+  --xr-background-material: translucent;
+
+  .count-card-container {
+    /* position: relative; */
+  }
 
   .count-card {
     --xr-background-material: thick;
-    position: relative;
+    /* position: relative;
+    --xr-back: 20; */
+    transform-origin: top left;
+    transform: translateZ(50px);
 
     p {
       --xr-background-material: transparent;
@@ -60,13 +68,14 @@ html.is-spatial {
   }
 
   .link-card {
-    --xr-background-material: translucent;
+    /* --xr-background-material: translucent; */
+    --xr-background-material: thin;
     border-radius: 20px;
     position: relative;
     --xr-back: 50;
     top: 20px;
-    transform-origin: top left;
-    transform: translateZ(30px) rotateX(30deg);
+    /* transform-origin: top left;
+    transform: translateZ(30px) rotateX(30deg); */
 
     a {
       display: block;
