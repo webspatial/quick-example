@@ -9,14 +9,6 @@ import { initScene } from "@webspatial/react-sdk";
 function App() {
   const [count, setCount] = useState(0);
 
-  // temporary debug
-  console.log("XR_ENV_BASE: ", __XR_ENV_BASE__);
-  console.log(
-    "process.env.XR_ENV: ",
-    typeof process !== "undefined" ? process.env.XR_ENV : "undefined",
-  );
-  console.log("import.meta.env.XR_ENV: ", import.meta.env.XR_ENV);
-
   return (
     <Router basename={__XR_ENV_BASE__}>
       <Routes>

@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + WebSpatial
+# Quick Example: WebSpatial + React + TypeScript + Vite
 
 ## Setup
 

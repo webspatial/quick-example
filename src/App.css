@@ -63,15 +63,11 @@ html.is-spatial {
     --xr-background-material: translucent;
     border-radius: 20px;
     position: relative;
-    top: 20px;
     --xr-back: 50;
+    top: 20px;
     transform-origin: top left;
     transform: translateZ(30px) rotateX(30deg);
 
-    p {
-      /* padding: 0; */
-      /* margin: 20px 20px; */
-    }
     a {
       display: block;
       --xr-background-material: thick;
