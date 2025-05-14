@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import SecondPage from "./SecondPage";
 import { initScene } from "@webspatial/react-sdk";
 
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -18,8 +19,10 @@ function App() {
           element={
             <>
               <div>
+                <h1
+                    enable-xr>Welcome to Vite + React</h1>
                 <a href="https://vite.dev" target="_blank">
-                  <img src={viteLogo} className="logo" alt="Vite logo" />
+                  <img src={viteLogo} className="logo" alt="Vite logo"/>
                 </a>
                 <a href="https://react.dev" target="_blank">
                   <img
@@ -41,7 +44,7 @@ function App() {
               <p className="read-the-docs">
                 Click on the Vite and React logos to learn more
               </p>
-              <div className="card link-card" enable-xr>
+              <div className="card link-card __enableXr__" >
                 <h2>Open Second Page</h2>
                 <p>
                   <Link to="/second-page" target="_blank" enable-xr>
