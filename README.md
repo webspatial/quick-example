@@ -17,7 +17,7 @@ Make the Web Spatial Too
 
 ## Tutorial
 
-[A step-by-step tutorial to build this example from scratch](https://github.com/webspatial/webspatial-sdk/blob/main/docs/en/quick-start/README.md)
+[A step-by-step tutorial to build this example from scratch](https://webspatial.dev/docs/quick-example)
 
 ## How to Use
 
@@ -43,7 +43,7 @@ XR_DEV_SERVER="[URL from `pnpm dev:avp`]" pnpm run:avp
 
 ## WebSpatial Documentation
 
-- [Table of Contents](https://github.com/webspatial/webspatial-sdk/blob/main/docs/en/README.md)
-- [Introduction](https://github.com/webspatial/webspatial-sdk/blob/main/docs/en/introduction/README.md)
-- [Core Concepts](https://github.com/webspatial/webspatial-sdk/blob/main/docs/en/core-concepts/README.md)
-- [Development Guide](https://github.com/webspatial/webspatial-sdk/blob/main/docs/en/development-guide/README.md)
+- [Table of Contents](https://webspatial.dev/docs)
+- [Introduction](https://webspatial.dev/docs/introduction)
+- [Core Concepts](https://webspatial.dev/docs/core-concepts)
+- [Development Guide](https://webspatial.dev/docs/development-guide)
