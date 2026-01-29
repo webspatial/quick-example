@@ -12,11 +12,11 @@ importers:
         specifier: ^4.0.0
         version: 4.1.0(three@0.170.0)
       '@webspatial/core-sdk':
-        specifier: ^0.1.16
-        version: 0.1.16
+        specifier: ^1.1.0
+        version: 1.1.0
       '@webspatial/react-sdk':
-        specifier: ^0.1.16
-        version: 0.1.16(@webspatial/core-sdk@0.1.16)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: ^1.1.0
+        version: 1.1.0(@webspatial/core-sdk@1.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
         specifier: ^19.0.0
         version: 19.1.0
@@ -43,14 +43,14 @@ importers:
         specifier: ^4.3.4
         version: 4.4.1(vite@6.3.5(terser@5.39.0))
       '@webspatial/builder':
-        specifier: ^0.1.16
-        version: 0.1.16
+        specifier: ^1.1.0
+        version: 1.1.0
       '@webspatial/platform-visionos':
-        specifier: ^0.1.16
-        version: 0.1.16
+        specifier: ^1.1.0
+        version: 1.1.0
       '@webspatial/vite-plugin':
-        specifier: ^0.1.7
-        version: 0.1.7(vite@6.3.5(terser@5.39.0))
+        specifier: ^0.2.1
+        version: 0.2.1(vite@6.3.5(terser@5.39.0))
       dotenv-cli:
         specifier: ^8.0.0
         version: 8.0.0
@@ -882,9 +882,6 @@ packages:
   '@tokenizer/token@0.3.0':
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
 
-  '@tweenjs/tween.js@23.1.3':
-    resolution: {integrity: sha512-vJmvvwFxYuGnF2axRtPYocag6Clbb5YS7kLL+SO/TeVFzHqDIWrNKYtcsPMibjDx9O+bu+psAy9NKfWklassUA==}
-
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
 
@@ -914,20 +911,11 @@ packages:
   '@types/react@19.1.3':
     resolution: {integrity: sha512-dLWQ+Z0CkIvK1J8+wrDPwGxEYFA4RAyHoZPxHVGspYmFVnwGSNT24cGIhFJrtfRnWVuW8X7NO52gCXmhkVUWGQ==}
 
-  '@types/stats.js@0.17.4':
-    resolution: {integrity: sha512-jIBvWWShCvlBqBNIZt0KAshWpvSjhkwkEu4ZUcASoAvhmrgAUI2t1dXrjSL4xXVLB4FznPrIsX3nKXFl/Dt4vA==}
-
-  '@types/three@0.170.0':
-    resolution: {integrity: sha512-CUm2uckq+zkCY7ZbFpviRttY+6f9fvwm6YqSqPfA5K22s9w7R4VnA3rzJse8kHVvuzLcTx+CjNCs2NYe0QFAyg==}
-
   '@types/tough-cookie@4.0.5':
     resolution: {integrity: sha512-/Ad8+nIOV7Rl++6f1BdKxFSMgmoqEoYbHRpPcx3JEfv8VRsQe9Z4mCXeJBzxs7mbHY/XOZZuXlRNfhpVPbs6ZA==}
 
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
-
-  '@types/webxr@0.5.22':
-    resolution: {integrity: sha512-Vr6Stjv5jPRqH690f5I5GLjVk8GSsoQSYJ2FVd/3jJF7KaqfwPi3ehfBS96mlQ2kPCwZaX6U0rG2+NGHBKkA/A==}
 
   '@typescript-eslint/eslint-plugin@8.32.0':
     resolution: {integrity: sha512-/jU9ettcntkBFmWUzzGgsClEi2ZFiikMX5eEQsmxIAWMOn4H3D4rvHssstmAHGVvrYnaMqdWWWg0b5M6IN/MTQ==}
@@ -982,25 +970,22 @@ packages:
     peerDependencies:
       vite: ^4.2.0 || ^5.0.0 || ^6.0.0
 
-  '@webgpu/types@0.1.60':
-    resolution: {integrity: sha512-8B/tdfRFKdrnejqmvq95ogp8tf52oZ51p3f4QD5m5Paey/qlX4Rhhy5Y8tgFMi7Ms70HzcMMw3EQjH/jdhTwlA==}
-
-  '@webspatial/builder@0.1.16':
-    resolution: {integrity: sha512-IcwiYb6G89RG5pT3tCm4qQMBrVTrtJ+O7d8orhl5SCTPWaqOHHRL9Z8Zseqv2cn8E5L3fo52t0gs6exkqIa8Bg==}
+  '@webspatial/builder@1.1.0':
+    resolution: {integrity: sha512-4WEtzJDIcX6hrkZP7nBRb3rlfLiuJeyFK1vViiCcK/yTCRnlW5nEDgNOAT2APxA6Z3IITJQwz3LM6UqXjc9LgQ==}
     engines: {node: '>=14.15.0'}
     hasBin: true
 
-  '@webspatial/core-sdk@0.1.16':
-    resolution: {integrity: sha512-4GEBeOFTTSRuQn5Tj8ZP4c0ksA9RJBt5Q/E8Uy4/QMJpnYUk7kexYOcYkumDDI+3ajtiRlAJamqR/fL0Oovr0w==}
+  '@webspatial/core-sdk@1.1.0':
+    resolution: {integrity: sha512-0PRTGVhq2TA8pZKfjJDpXNG+ZFhkhAC7MiNEgmiDcMwCOhmSXsEWT10lTNntejqRCSthcdnfGBidMarXw/MCjg==}
 
-  '@webspatial/platform-visionos@0.1.16':
-    resolution: {integrity: sha512-rs+GvdTHysuaxZUI4UzsbpId2EAlzBjt2hi9azl31yxLM7PUjdTmsqjPOLosOryCBU+qADUS/iKUX5PWQbUBmg==}
+  '@webspatial/platform-visionos@1.1.0':
+    resolution: {integrity: sha512-qG1mEpIRw2Kus9TFUzNg4ix7H8WQ8GJwyaVp2NzDu+ggnGx1zqckTpZ7OvlDoPotmW9mVTxdIlI4D/77QDp/ow==}
     engines: {node: '>=14.15.0'}
 
-  '@webspatial/react-sdk@0.1.16':
-    resolution: {integrity: sha512-SiTnPQg70hiZmq+Kfc0KLReNHlaZ7d18Px93mwQ9GoPlycK2Zt3fn9pdrFfow6i67UcQKhXjNW8d6ZvElqtelw==}
+  '@webspatial/react-sdk@1.1.0':
+    resolution: {integrity: sha512-bJT04S2d9SvYIxN4xQe0/5s/gtv1TaYD+MI680VtTXuq+POqfXf1CQYJC/kIjrO0sWQ/oz/XFrFr2wF+x8nOIA==}
     peerDependencies:
-      '@webspatial/core-sdk': 0.1.16
+      '@webspatial/core-sdk': 1.1.0
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
     peerDependenciesMeta:
@@ -1009,11 +994,11 @@ packages:
       react-dom:
         optional: true
 
-  '@webspatial/shared@0.1.4':
-    resolution: {integrity: sha512-bkTKNY2DOFaQlkBzFd8OY6ktw3Lh2qSlbCoLg6tXzFfwavosqdyygncqOogNfbuKyKRintTu/LFmPuP5W+IBCA==}
+  '@webspatial/shared@0.2.0':
+    resolution: {integrity: sha512-+1QQ96PHuLvTOAqteJ+5Y2ta9226vlfs//0gIg+5V9rmNCFKF2K+RqgiWjBbT4wC5d1EgE52UPzpL4rYavyhsA==}
 
-  '@webspatial/vite-plugin@0.1.7':
-    resolution: {integrity: sha512-nbtXQxROFBVQxBSVfVgyS/2gP7q+fXQaNilJSTz0v5H3ETXVLkpdlT1zwQeuYtQv27lcBk0+To2SJx3JjKbzZQ==}
+  '@webspatial/vite-plugin@0.2.1':
+    resolution: {integrity: sha512-nOw6laEo/eHPTLwcw/ZeBWnp6aVqYtCSO21eUXUvRZAPzpL/C9Iifdl0SQg92qxL9D+qpVZBdKuNHWBZ5IdnNw==}
     peerDependencies:
       vite: ^6.0.0
 
@@ -1502,9 +1487,6 @@ packages:
     resolution: {integrity: sha512-U+LQ+fHwF6TMg82A88wjljC5L174eoJfrc+0g4e7JWqL7U0w0QAoOkPDCGkO9KGH9BY55s4n45gLGOtlTAoqmw==}
     engines: {node: '>=10.4'}
 
-  fflate@0.8.2:
-    resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
-
   figures@3.2.0:
     resolution: {integrity: sha512-yaduQFRKLXYOGgEn6AZau90j3ggSOyiqXU0F9JZfeXYhNa+Jk4X+s45A2zg5jns87GAFa34BBm2kXw4XpNcbdg==}
     engines: {node: '>=8'}
@@ -1793,10 +1775,6 @@ packages:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
 
-  lodash.isequal@4.5.0:
-    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
-    deprecated: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
-
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
@@ -1806,10 +1784,6 @@ packages:
   log-symbols@4.1.0:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
     engines: {node: '>=10'}
-
-  loglevel@1.9.2:
-    resolution: {integrity: sha512-HgMmCqIJSAKqo68l0rS2AanEWfkxaZ5wNiEFb5ggm08lDs9Xl2KxBlX3PTcaD2chBM1gXAYf491/M2Rv8Jwayg==}
-    engines: {node: '>= 0.6.0'}
 
   lower-case@2.0.2:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
@@ -1832,9 +1806,6 @@ packages:
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
-
-  meshoptimizer@0.18.1:
-    resolution: {integrity: sha512-ZhoIoL7TNV4s5B6+rx5mC//fw8/POGyNxS/DZyCJeiZ12ScLfVwRE/GfsxwiTkMYYD5DmK2/JXnEVXqL4rF+Sw==}
 
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
@@ -2014,6 +1985,7 @@ packages:
   phin@3.7.1:
     resolution: {integrity: sha512-GEazpTWwTZaEQ9RhL7Nyz0WwqilbqgLahDM3D0hxWwmVDI52nXEybHqiN6/elwpkJBhcuj+WbBu+QfT0uhPGfQ==}
     engines: {node: '>= 8'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -3257,8 +3229,6 @@ snapshots:
 
   '@tokenizer/token@0.3.0': {}
 
-  '@tweenjs/tween.js@23.1.3': {}
-
   '@types/babel__core@7.20.5':
     dependencies:
       '@babel/parser': 7.27.2
@@ -3294,22 +3264,9 @@ snapshots:
     dependencies:
       csstype: 3.1.3
 
-  '@types/stats.js@0.17.4': {}
-
-  '@types/three@0.170.0':
-    dependencies:
-      '@tweenjs/tween.js': 23.1.3
-      '@types/stats.js': 0.17.4
-      '@types/webxr': 0.5.22
-      '@webgpu/types': 0.1.60
-      fflate: 0.8.2
-      meshoptimizer: 0.18.1
-
   '@types/tough-cookie@4.0.5': {}
 
   '@types/trusted-types@2.0.7': {}
-
-  '@types/webxr@0.5.22': {}
 
   '@typescript-eslint/eslint-plugin@8.32.0(@typescript-eslint/parser@8.32.0(eslint@9.26.0)(typescript@5.7.3))(eslint@9.26.0)(typescript@5.7.3)':
     dependencies:
@@ -3399,12 +3356,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@webgpu/types@0.1.60': {}
-
-  '@webspatial/builder@0.1.16':
+  '@webspatial/builder@1.1.0':
     dependencies:
       '@resvg/resvg-js': 2.6.2
-      '@webspatial/platform-visionos': 0.1.16
+      '@webspatial/platform-visionos': 1.1.0
       cli-progress: 3.12.0
       colors: 1.4.0
       commander: 13.1.0
@@ -3422,29 +3377,22 @@ snapshots:
       - debug
       - encoding
 
-  '@webspatial/core-sdk@0.1.16':
-    dependencies:
-      loglevel: 1.9.2
+  '@webspatial/core-sdk@1.1.0': {}
 
-  '@webspatial/platform-visionos@0.1.16': {}
+  '@webspatial/platform-visionos@1.1.0': {}
 
-  '@webspatial/react-sdk@0.1.16(@webspatial/core-sdk@0.1.16)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@webspatial/react-sdk@1.1.0(@webspatial/core-sdk@1.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@google/model-viewer': 4.1.0(three@0.170.0)
-      '@types/three': 0.170.0
-      '@webspatial/core-sdk': 0.1.16
-      lodash.isequal: 4.5.0
-      loglevel: 1.9.2
-      three: 0.170.0
+      '@webspatial/core-sdk': 1.1.0
     optionalDependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
-  '@webspatial/shared@0.1.4': {}
+  '@webspatial/shared@0.2.0': {}
 
-  '@webspatial/vite-plugin@0.1.7(vite@6.3.5(terser@5.39.0))':
+  '@webspatial/vite-plugin@0.2.1(vite@6.3.5(terser@5.39.0))':
     dependencies:
-      '@webspatial/shared': 0.1.4
+      '@webspatial/shared': 0.2.0
       vite: 6.3.5(terser@5.39.0)
 
   '@xmldom/xmldom@0.8.10': {}
@@ -3969,8 +3917,6 @@ snapshots:
       to-arraybuffer: 1.0.1
       tough-cookie: 4.1.4
 
-  fflate@0.8.2: {}
-
   figures@3.2.0:
     dependencies:
       escape-string-regexp: 1.0.5
@@ -4278,8 +4224,6 @@ snapshots:
     dependencies:
       p-locate: 5.0.0
 
-  lodash.isequal@4.5.0: {}
-
   lodash.merge@4.6.2: {}
 
   lodash@4.17.21: {}
@@ -4288,8 +4232,6 @@ snapshots:
     dependencies:
       chalk: 4.1.2
       is-unicode-supported: 0.1.0
-
-  loglevel@1.9.2: {}
 
   lower-case@2.0.2:
     dependencies:
@@ -4306,8 +4248,6 @@ snapshots:
   merge-descriptors@2.0.0: {}
 
   merge2@1.4.1: {}
-
-  meshoptimizer@0.18.1: {}
 
   micromatch@4.0.8:
     dependencies:
