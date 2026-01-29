@@ -10,7 +10,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <Router basename={__XR_ENV_BASE__}>
+    <Router basename={__XR_ENV_BASE__.replace(/\/$/, "")}>
       <Routes>
         <Route path="/second-page" element={<SecondPage />} />
         <Route
@@ -61,7 +61,7 @@ function App() {
                         };
                       });
                       window.open(
-                        `${__XR_ENV_BASE__}/second-page`,
+                        `${__XR_ENV_BASE__.replace(/\/$/, "")}/second-page`,
                         "secondScene",
                       );
                     }}>
