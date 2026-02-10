@@ -1,15 +1,12 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useState } from "react";
+import MaterialApiTest from "./MaterialApiTest";
 import SecondPage from "./SecondPage";
-import { initScene } from "@webspatial/react-sdk";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const [page, setPage] = useState<"home" | "second">("home");
   return (
+<<<<<<< Updated upstream
     <Router basename={__XR_ENV_BASE__}>
       <Routes>
         <Route path="/second-page" element={<SecondPage />} />
@@ -74,6 +71,18 @@ function App() {
         />
       </Routes>
     </Router>
+=======
+    <div>
+      <nav style={{ marginBottom: 16 }}>
+        <button onClick={() => setPage("home")}>Home</button>
+        <span style={{ margin: "0 8px" }}>/</span>
+        <button aria-label="go-to-second" onClick={() => setPage("second")}>
+          Go to Second
+        </button>
+      </nav>
+      {page === "home" ? <MaterialApiTest /> : <SecondPage />}
+    </div>
+>>>>>>> Stashed changes
   );
 }
 

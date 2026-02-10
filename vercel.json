@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "buildCommand": "pnpm run build:vercel-avp",
+  "outputDirectory": "dist/webspatial/avp",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

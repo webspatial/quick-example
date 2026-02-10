@@ -41,9 +41,22 @@
   color: #888;
 }
 
+/* XR background material utility classes */
+.xr-translucent {
+  --xr-back: 100;
+  --xr-background-material: translucent;
+}
+.xr-thick {
+  --xr-background-material: thick;
+}
+.xr-transparent {
+  --xr-background-material: transparent;
+}
+
 html.is-spatial {
   background-color: transparent;
-  --xr-background-material: transparent;
+  --xr-background-material: translucent;
+  border-radius: 10%;
 
   .count-card {
     --xr-background-material: thick;
