@@ -1,0 +1,88 @@
+@property --xr-back {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+.tile {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.tileOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.28) 100%
+  );
+}
+
+.tileLabel {
+  position: absolute;
+  left: 16px;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 24px;
+  font-family: var(--mono);
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: rgba(0, 0, 0, 0.5) 0 2px 10px;
+}
+
+.tileLabel,
+.likeButton {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.tileName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.likeButton {
+  width: 56px;
+  height: 56px;
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.12);
+  color: rgba(255, 255, 255, 0.92);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  font-size: 28px;
+  transition:
+    --xr-back 220ms ease,
+    transform 0.08s ease,
+    background-color 0.2s ease;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.22);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgba(59, 130, 246, 0.9);
+    outline-offset: 2px;
+  }
+
+  &.isLiked {
+    color: #ef4444;
+    border-color: rgba(239, 68, 68, 0.45);
+    background: rgba(239, 68, 68, 0.14);
+  }
+}

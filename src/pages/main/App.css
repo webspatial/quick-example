@@ -1,0 +1,44 @@
+.content {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  margin-left: 240px;
+  padding: 22px 0;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.contentHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: -0.8px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.masonry {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.column {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}

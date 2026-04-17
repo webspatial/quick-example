@@ -1,8 +1,12 @@
 {
+  "name": "My Awesome App",
+  "start_url": "/",
+  "display": "minimal-ui",
   "xr_main_scene": {
     "default_size": {
-      "width": 500,
-      "height": 1000
+      "width": 1280,
+      "height": 720
     }
   }
+
 }

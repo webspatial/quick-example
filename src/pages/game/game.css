@@ -1,0 +1,163 @@
+.gameRoot {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.gameHud {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.gameHudLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gameTitle {
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 700;
+  font-size: 84px;
+  letter-spacing: -0.6px;
+}
+
+.gameStats {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.gameStat {
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(0, 0, 0, 0.44);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 16px 24px;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 36px;
+}
+
+.gameHudRight {
+  display: flex;
+  gap: 10px;
+}
+
+.gameButton {
+  min-width: 160px;
+  padding: 16px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(0, 0, 0, 0.44);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 36px;
+  cursor: pointer;
+  transition: transform 0.05s, background-color 0.2s;
+  font-family: inherit;
+}
+
+.gameButton:hover {
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.gameButton.isPrimary {
+  background: rgba(59, 130, 246, 0.8);
+  border-color: rgba(59, 130, 246, 0.7);
+}
+
+.gameButton.isPrimary:hover {
+  background: rgba(59, 130, 246, 0.95);
+}
+
+.gameButton:active {
+  transform: translateY(1px);
+}
+
+.gameButton:focus-visible {
+  outline: 2px solid rgba(59, 130, 246, 0.9);
+  outline-offset: 2px;
+}
+
+.gameBoard {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gameBlock {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: none;
+  border-radius: 14px;
+  box-shadow:
+    rgba(0, 0, 0, 0.35) 0 20px 35px -18px,
+    rgba(0, 0, 0, 0.25) 0 10px 16px -16px;
+  cursor: pointer;
+  padding: 0;
+  pointer-events: auto;
+}
+
+.gameBlock.good {
+  background: #22c55e;
+}
+
+.gameBlock.bad {
+  background: #ef4444;
+}
+
+.gameCenter {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.gameCenterCard {
+  pointer-events: none;
+  padding: 34px 36px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.44);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.gameCenterTitle {
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.gameCenterSub {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 32px;
+  line-height: 1.35;
+}
+
+.gameRules {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gameRule {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 28px;
+  line-height: 1.35;
+}

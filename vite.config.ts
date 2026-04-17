@@ -1,19 +1,16 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import webSpatial from "@webspatial/vite-plugin";
-import { createHtmlPlugin } from "vite-plugin-html";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'node:path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    webSpatial(),
-    createHtmlPlugin({
-      inject: {
-        data: {
-          XR_ENV: process.env.XR_ENV,
-        },
+  plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: {
+        index: path.resolve(__dirname, 'index.html'),
+        game: path.resolve(__dirname, 'game.html'),
       },
-    }),
-  ],
-});
+    },
+  },
+})
